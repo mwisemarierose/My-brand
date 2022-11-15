@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/packages/css/signup.css" >
+    <title>Sign In | Mwiseneza</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    
+  </head>
+  <body>
+    <div class="container">
+      <h1>Login</h1>
+      <form action="" id="loginform" onsubmit="return false;" >
+        <div class="form-control">
+          <input type="text" id="email">
+          <label>Email</label>
+        </div>
+        
+        <div class="form-control">
+          <input type="password" id="password">
+          <label>Password</label>
+        </div>
+
+        <button type="submit"class="btn" onclick="loginUser()"> Login </button>
+
+        <p class="text">Don't have an account <a href="signup.html">Register</a> </p> 
+        <p class="text">Go to <a href="index.html">Homepage</a> </p> 
+      </form>
+    </div>
+    <script>
+      const labels = document.querySelectorAll('.form-control label')
+      
+      labels.forEach(label => {
+        label.innerHTML = label.innerText
+        .split('')
+        .map((letter, idx) => `<span style="transition-delay:${idx * 30}ms">${letter}</span>`)
+        .join('')
+      })
+      </script>
+      <script src="./packages/js/login1.js"></script>
+  </body>
+</html>

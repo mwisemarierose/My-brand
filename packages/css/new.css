@@ -1,0 +1,64 @@
+*{
+    margin: 15px;
+    padding: 5px;
+    /* box-sizing: border-box; */
+    font-family: "Poppins" , sans-serif;
+  }
+  
+  .content{
+    position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  border: 1px solid #888;
+  width: 50%;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s
+  }
+  @-webkit-keyframes animatetop {
+    from {top:-300px; opacity:0} 
+    to {top:0; opacity:1}
+  }
+  
+  @keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+  }
+  
+
+  a {
+    text-decoration:none;
+    }
+
+  .btn {
+    background: #f05462;
+    color: white;
+    padding: 5px 10px;
+    text-align: center;
+    font-size: 18px;
+    letter-spacing: 5px;
+    font-weight: 600;
+     position:relative;
+  }
+  
+  .btn:hover {
+    color: #f05462;
+    background: white;
+    /* padding: 3px 8px; */
+    border: 2px solid #f05462;
+  }
+  .close {
+    color: black;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  .close:hover,
+.close:focus {
+  color:red;
+  text-decoration: none;
+  cursor: pointer;
+}

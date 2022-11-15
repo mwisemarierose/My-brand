@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./packages/css/dash.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <title>Admin Panel</title>
+</head>
+<body>
+    <div class="sidebar">
+        <div class="logo-details">
+            <div class="logo_name">My brand</div>
+            <i class='bx bx-menu' id="btn" ></i>
+        </div>
+
+            <ul class="nav-list">
+              <li>
+                <a href="dashboard.html">
+                  <i class='bx bx-grid-alt'></i>
+                  <span class="links_name">Dashboard</span>
+                </a>
+                 <span class="tooltip">Dashboard</span>
+              </li>
+              <li>
+               <a href="message.html">
+                 <i class='fa fa-envelope' ></i>
+                 <span class="links_name">Messages</span>
+               </a>
+               <span class="tooltip">Messages</span>
+             </li>
+             <li>
+               <a href="blog1.html">
+                <i class='bx bxl-bitcoin'></i>
+                 <span class="links_name">Blogs</span>
+               </a>
+               <span class="tooltip">Blogs</span>
+             </li>
+             <li>
+               <a href="#">
+                <i class='bx bxs-bell-ring'></i>
+                 <span class="links_name">Notification</span>
+               </a>
+               <span class="tooltip">Notification</span>
+             </li>
+             <li>
+               <a href="#">
+                 <i class='bx bx-cog' ></i>
+                 <span class="links_name">Setting</span>
+               </a>
+               <span class="tooltip">Setting</span>
+             </li>
+             <li>
+              <a href="#">
+                <i class='fa fa-question-circle' ></i>
+                <span class="links_name">Help</span>
+              </a>
+              <span class="tooltip">Help</span>
+            </li>
+             <li class="profile">
+                 <div class="profile-details">
+                     <div class="name">logout</div>
+                     <a href="index.html">
+                      <i class='bx bx-log-out' id="log_out" ></i>
+                      </a>
+                   </div>
+                 </div>
+             </li>
+            </ul>
+        </ul>
+    </div>
+    <div class="container">
+        <div class="header">
+            <div class="nav">
+                <div class="search">
+                    <input type="text" placeholder="Search..">
+                    <button type="submit"><img src="packages/images/search.png" alt=""></button>
+                </div>
+                <div class="user">
+                    <a href="newBlog.html" class="btn"> New Blog</a>
+                    <div>
+                    <img src="packages/images/rose.jpg" alt="Avatar" class="avatar">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="content">
+            <div class="cards">
+                <div class="card">
+                    <div class="box">
+                        <h1>21</h1>
+                        <h3>posts</h3>
+                    </div>
+                    <div class="icon-case">
+                      <i class='bx bxs-detail'></i>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="box">
+                        <h1>53</h1>
+                        <h3>likes</h3>
+                    </div>
+                    <div class="icon-case">
+                      <img src="packages/images/bxs-heart.svg" alt="">
+                      <!-- <i class='bx bxs-like'></i> -->
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="box">
+                        <h1>5</h1>
+                        <h3>comments</h3>
+                    </div>
+                    <div class="icon-case">
+                      <i class='bx bxs-comment-detail'></i>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="box">
+                        <h1>35</h1>
+                        <h3>visitors</h3>
+                    </div>
+                    <div class="icon-case">
+                      <i class='bx bxs-user-detail'></i>
+                    </div>
+                </div>
+            </div>
+            <div class="content-2">
+                <div class="recent-blogs">
+                    <div class="title">
+                      <h3>RECENT BLOG</h3>
+                    </div>
+                    <table >
+                        <tr>
+                            <th>profile</th>
+                            <th>title</th>
+                            <th >update</th>
+                            <th>delete</th>
+                        </tr>
+                        <tr>
+                          <td><img src="packages/images/js.png" width="45%" height="25% "alt=""></td>
+                          <td>JavaScript</td>
+                          <td><a href="#" class="btn">update</a></td>
+                          <td><a href="#" class="btn">Delete</a></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+   <script src="./packages/js/global.js"></script>
+    <script src="./packages/js/dash.js"></script>
+</body>
+
+</html>
