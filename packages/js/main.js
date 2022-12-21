@@ -197,26 +197,26 @@ themeButton.addEventListener("click", () => {
   localStorage.setItem("selected-icon", getCurrentIcon());
 });
 
-const message = document.querySelector("#submessage");
-message.addEventListener("click",(e)=>{
-  e.preventDefault();
-  const name=document.querySelector("#name");
-  const email=document.querySelector("#email");
-  const desc=document.querySelector("#description");
-console.log(name,email,desc)
-  fetch(`${globalURL}/api/message/sendMessage`,
-  {
-    headers: {
-      'Accept': 'application/json',
-      'Content-Type': 'application/json'
-    },
-  method: "POST",
-  body: JSON.stringify({
-      name: name.value,
-      email: email.value,
-      msg: desc.value
-  }),
-})
-    .then(data =>(console.log(data.json)))    
-})
+// const message = document.querySelector("#submessage");
+// message.addEventListener("click",(e)=>{
+//   e.preventDefault();
+//   const name=document.querySelector("#name");
+//   const email=document.querySelector("#email");
+//   const desc=document.querySelector("#description");
+// console.log(name,email,desc)
+//   fetch(`${globalURL}/api/message/sendMessage`,
+//   {
+//     headers: {
+//       'Accept': 'application/json',
+//       'Content-Type': 'application/json'
+//     },
+//   method: "POST",
+//   body: JSON.stringify({
+//       name: name.value,
+//       email: email.value,
+//       msg: desc.value
+//   }),
+// })
+//     .then(data =>(console.log(data.json)))    
+// })
 

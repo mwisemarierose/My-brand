@@ -459,29 +459,31 @@
                         </div>
                     </div>
         
-                    <form id="msgForm" class="contact__form grid">
+                    <form id="msgForm" class="contact__form grid submit-contact" >
                         <div class="contact__inputs grid">
                             <div class="contact__content">
                                 <label for="" class="contact__label">Name</label>
-                                <input type="text" class="contact__input" id="name">
+                                <input type="text" class="contact__input" id="name" required>
                             </div>
         
                             <div class="contact__content">
                                 <label for="" class="contact__label">E-mail</label>
-                                <input type="email" class="contact__input" id="email">
+                                <input type="email" name="email" class="contact__input" id="email" >
                             </div>
+                            
                         </div>
-        
+                        <span class="email-error"></span>
                         <div class="contact__content">
                             <label for="" class="contact__label">Description</label>
-                            <textarea name="" id="description" cols="0" rows="7" class="contact__input" ></textarea>
+                            <textarea name="" id="description" cols="0" rows="7" class="contact__input"  required></textarea>
                         </div>
         
                         <div>
-                            <button type="submit" id="submessage">
+                            <button type="submit" id="submessage" >
                                 Send message
                                 <i class="uil uil-message button__icon"></i>
                             </button>
+                            
                         </div>
                     </form>
                 </div>
@@ -723,8 +725,42 @@
     <script src="./packages/js/swiper-bundle.min.js"></script>
     <script src="./packages/js/main.js"></script>
     <script src="./packages/js/blog.js"></script>
-    
 
+    <script language="javascript">
 
+function checkEmail() {
+
+    var email = document.getElementById('txtEmail');
+    var filter = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+
+    if (!filter.test(email.value)) {
+    alert('Please provide a valid email address');
+    email.focus;
+    return false;
+ }
+}
+const form = document.querySelector('.submit-contact');
+console.log(form)
+var validRegex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+form.addEventListener('submit',(e)=>{
+    e.preventDefault();
+    if(form.email.value == ''){
+        document.querySelector('.email-error').innerHTML = 'Email cannot be empty!🤨';
+        document.querySelector('.email-error').style.color = 'red';
+        document.querySelector('.email-error').style.marginLeft='250px'; 
+        // document.querySelector('.email-error').style.marginTop='5px'; 
+        
+
+    }
+    if (input.value.match(validRegex)) {
+
+alert("Valid email address!");
+
+} else {
+
+alert("Invalid email address!");
+}
+})
+</script>
 </body>
 </html>
