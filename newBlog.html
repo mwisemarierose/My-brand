@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Blog</title>
+    <link rel="stylesheet" href="./packages/css/new.css">
+
+</head>
+<body>
+    
+    <!-- <div class="container" class="modal-content"> -->
+    <div class="content">
+        <div class="modal-header">
+            <span class="close">&times;</span>
+           
+          </div>
+        <h1>UPLOAD NEW BLOG</h1>
+        <form id="postBlog" method="POST" >
+       <input type="text" name="name" id="postTitle" placeholder="blog title" ><br>
+        <textarea name="details" id="postDetails" placeholder="description"  rows="7" cols="40" style="width:100%;max-width:350px;"></textarea>
+        <br>
+       <input type="file" name="image" id="postImage"/><br>
+            <div>
+            <button  class="btn" type="submit" onclick="pop()"> UPLOAD </button>
+            </div>
+        <p class="text"> <a href="dashboard.html">Go back to dashboard</a> </p> 
+
+        </form>
+</div> 
+<script src="./packages/js/blog.js"></script>
+
+<script>
+    var modal = document.getElementById("myModal");
+
+var btn = document.getElementById("myBtn");
+
+var span = document.getElementsByClassName("close")[0];
+ 
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+function pop(){
+    window.alert("POST ADDED SUCCESSFULLY")
+}
+</script>
+<script src="./packages/js/global.js"></script>
+
+</body>
+</html>
