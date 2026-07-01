@@ -21,7 +21,7 @@ const Hero = () => {
     <section id="home" className="relative min-h-screen flex items-center justify-center pt-24 pb-12 text-slate-800 dark:text-slate-100 transition-colors duration-300">
       <div className="max-w-3xl mx-auto px-6 w-full flex flex-col items-center text-center space-y-6">
         <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold tracking-tight leading-none text-slate-900 dark:text-white">
-          Hi, I'm <span className="bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 bg-clip-text text-transparent">Marie Rose</span>
+          Hi, I'm <span className="bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 bg-clip-text text-transparent">Rose</span>
         </h1>
 
         <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-slate-700 dark:text-slate-200">
