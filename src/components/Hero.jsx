@@ -29,7 +29,7 @@ const Hero = () => {
         </h2>
 
         <p className="text-base sm:text-lg text-slate-600 dark:text-zinc-300 max-w-2xl leading-relaxed">
-          I build secure, high-performance software systems and conduct research in speech technologies (ASR) and extremism detection in low-resource environments with Carnegie Mellon University Africa.
+          I build secure, high-performance software systems and research applied AI, speech technologies (ASR), and NLP for low-resource languages and real-world impact.
         </p>
 
         <div className="flex flex-col sm:flex-row gap-4 items-center justify-center w-full sm:w-auto pt-2">
