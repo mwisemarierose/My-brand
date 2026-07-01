@@ -77,7 +77,7 @@ const About = () => {
             {/* Download CV button */}
             <div>
               <a 
-                href="/resume.pdf" 
+                href={`${import.meta.env.BASE_URL}resume.pdf`} 
                 download="Marie_Rose_Mwiseneza_Resume.pdf"
                 className="inline-flex items-center justify-center px-6 py-3 rounded-xl bg-indigo-600 hover:bg-indigo-700 text-white font-semibold shadow-lg shadow-indigo-600/10 hover:shadow-indigo-600/25 transition-all gap-2 cursor-pointer text-sm"
               >
